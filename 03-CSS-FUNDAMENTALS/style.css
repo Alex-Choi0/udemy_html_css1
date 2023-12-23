@@ -82,5 +82,26 @@ aside {
 }
 
 body{
-    background-color: white;
+    /* background-color: white; */
+}
+
+/* .first-li{
+    font-weight: bold;
+} */
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    color : red;
+}
+
+/* sudo 문법은 article 테그에서 첫번째 태그를 찾는다. p태그는 첫번째가 아니기 때문에 무시된다. 실질적으로 첫번째 테그는 header이다.*/
+article p:last-child {
+    color : red;
 }
