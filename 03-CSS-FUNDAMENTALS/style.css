@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-
+/* PAGE SECTIONS */
 body {
     font-family: sans-serif;
     color: #444;
@@ -64,7 +64,6 @@ ol, ul{
 }
 
 li {
-
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -108,7 +107,7 @@ article header p {
 
     padding: 20px 40px;
     margin-bottom: 60px;
-    height: 80px;
+    /* height: 80px; */
 
 }
 
@@ -170,6 +169,21 @@ a:active {
 .post-img{
    width:  100%;
    height: auto; /* html에서 정의 되어야 한다. 그러면 다른 속성의 길이를 바꿔도 비율이 유지*/
+   /* margin: 100px; */
+}
+
+nav a:link {
+    /* background-color: orangered;
+    margin : 20px;
+    padding: 20px;
+    display: block; */
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:link:last-child{
+    margin-right: 0;
 }
 
 /* LVHA */
