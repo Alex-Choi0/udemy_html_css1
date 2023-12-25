@@ -1,57 +1,69 @@
 /* *은 모든 속성을 HTML에 상속한다 */
 * {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: sans-serif;
+    color: #444;
     border-top: 10px solid #1098ad;
 }
 
 
-body{
-    font-family: sans-serif;
-    color : #444;
 
-    border-top: 10px solid red;
-}
-
-
-
-h1, h2, h3{
-    color : #1098ad; 
-}
+h1,
+h2,
 
 h1 {
     font-size: 26px;
-    
+
     text-transform: uppercase;
     font-style: italic;
-    color : #1098ad; 
+    color: #1098ad;
     /*color : rgba(126, 189, 68, 0.796)*/
 }
 
 h2 {
     font-size: 40px;
-    
+    margin-bottom: 30px;
 }
 
 h3 {
-    font-size : 30px;
-    
+    color: #1098ad;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
+
 
 h4 {
     font-size: 20px;
-    
+
     text-transform: uppercase;
     text-align: center
 }
 
 p {
     font-size: 22px;
-    
+    margin-bottom: 15px;
     line-height: 1.5;
 }
 
+ol, ul{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 li {
-    
-    font-size : 20px;
+
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
 }
 
 /* footer p {
@@ -78,17 +90,39 @@ article header p {
 .related-author {
     font-size: 18px;
     font-weight: bold;
-    list-style-type : none
+    list-style-type: none
 }
 
-.main-header{
+.main-header {
     background-color: #f7f7f7;
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+
+    padding: 20px 40px;
+    margin-bottom: 60px;
+
+}
+
+nav {
+    font-size: 18px;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
+.post-header{
+    margin-bottom: 40px;
 }
 
 aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 0px;
 }
 
 
@@ -96,21 +130,10 @@ aside {
     font-weight: bold;
 } */
 
-li:first-child{
-    font-weight: bold;
-}
-
-li:last-child{
-    font-style: italic;
-}
-
-li:nth-child(odd) {
-    color : red;
-}
 
 /* sudo 문법은 article 테그에서 첫번째 태그를 찾는다. p태그는 첫번째가 아니기 때문에 무시된다. 실질적으로 첫번째 테그는 header이다.*/
 article p:first-child {
-    color : red;
+    color: red;
 }
 
 /* Styling links */
@@ -121,16 +144,16 @@ a:link {
 }
 
 a:visited {
-    color : #1098ad;
+    color: #1098ad;
 }
 
 a:hover {
-    color : orangered;
-    font-weight : bold;
+    color: orangered;
+    font-weight: bold;
     text-decoration: underline orangered;
 }
 
-a:active{
+a:active {
     background-color: black;
     font-style: italic;
 }
@@ -159,6 +182,4 @@ nav p {
     font-size: 18px;
 } */
 
-nav {
-    font-size: 18px;
-}
+
