@@ -101,6 +101,7 @@ article header p {
 
     padding: 20px 40px;
     margin-bottom: 60px;
+    height: 80px;
 
 }
 
@@ -123,6 +124,7 @@ aside {
     /* padding-top: 50px;
     padding-bottom: 50px; */
     padding: 50px 0px;
+    width: 500px;
 }
 
 
@@ -156,6 +158,11 @@ a:hover {
 a:active {
     background-color: black;
     font-style: italic;
+}
+
+.post-img{
+   width:  100%;
+   height: auto; /* html에서 정의 되어야 한다. 그러면 다른 속성의 길이를 바꿔도 비율이 유지*/
 }
 
 /* LVHA */
