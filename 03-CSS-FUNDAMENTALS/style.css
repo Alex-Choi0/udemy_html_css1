@@ -1,5 +1,20 @@
-h1, h2, h3, h4, p, li {
+/* *은 모든 속성을 HTML에 상속한다 */
+* {
+    border-top: 10px solid #1098ad;
+}
+
+
+body{
     font-family: sans-serif;
+    color : #444;
+
+    border-top: 10px solid red;
+}
+
+
+
+h1, h2, h3{
+    color : #1098ad; 
 }
 
 h1 {
@@ -7,6 +22,8 @@ h1 {
     
     text-transform: uppercase;
     font-style: italic;
+    color : #1098ad; 
+    /*color : rgba(126, 189, 68, 0.796)*/
 }
 
 h2 {
@@ -64,3 +81,84 @@ article header p {
     list-style-type : none
 }
 
+.main-header{
+    background-color: #f7f7f7;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+}
+
+
+/* .first-li{
+    font-weight: bold;
+} */
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    color : red;
+}
+
+/* sudo 문법은 article 테그에서 첫번째 태그를 찾는다. p태그는 첫번째가 아니기 때문에 무시된다. 실질적으로 첫번째 테그는 header이다.*/
+article p:first-child {
+    color : red;
+}
+
+/* Styling links */
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+    /* color : black */
+}
+
+a:visited {
+    color : #1098ad;
+}
+
+a:hover {
+    color : orangered;
+    font-weight : bold;
+    text-decoration: underline orangered;
+}
+
+a:active{
+    background-color: black;
+    font-style: italic;
+}
+
+/* LVHA */
+
+/* Resolving conflicts */
+/* #copyright {
+    color: red;
+}
+
+.copyright {
+    color : blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer {
+    clolor: green !important;
+} */
+
+/* nav a:link,
+nav p {
+    font-size: 18px;
+} */
+
+nav {
+    font-size: 18px;
+}
