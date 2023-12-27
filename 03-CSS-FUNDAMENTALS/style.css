@@ -105,6 +105,7 @@ article header p {
 
 .main-header {
     background-color: #f7f7f7;
+    /* background-color: red; */
     /* padding: 20px;
     padding-left: 40px;
     padding-right: 40px; */
@@ -282,3 +283,18 @@ h1 {
 nav {
     float : right;
 }
+
+/* float으로 생긴 문제를 아래로 수정 */
+.clear{
+    clear:both;
+}
+
+/* clear fix hack */
+/* empty div를 사용하지 않기 위해 개발 */
+.clearfix::after{
+    clear:both;
+    /* header에 컨텐츠가 있어야함 */
+    content: '';
+    display: block;
+}
+
